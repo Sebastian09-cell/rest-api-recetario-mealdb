@@ -1,32 +1,44 @@
-# React + TypeScript + Vite
+# 🍽️ Meal Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Aplicación web para buscar recetas de comida, consumiendo la API pública de [TheMealDB](https://www.themealdb.com/api.php).
 
-Currently, two official plugins are available:
+## 🔗 Demo en vivo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+👉 [https://jocular-donut-de0c57.netlify.app/](https://jocular-donut-de0c57.netlify.app/)
 
-## React Compiler
+## 🚀 Tecnologías utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** + **TypeScript**
+- **Chakra UI** — componentes y estilos
+- **Axios** — peticiones HTTP
+- **React Query (TanStack Query)** — manejo de estado del servidor y caché
+- **Vite** — bundler y entorno de desarrollo
 
-## Expanding the Oxlint configuration
+## ✨ Funcionalidades
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- Búsqueda de recetas por categoría
+- Vista detallada de cada receta (ingredientes, pasos, imagen)
+- Manejo de estados de carga (loading/skeletons)
+- Cancelación de peticiones con `AbortController`
+- Diseño responsive con Chakra UI
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+## 📦 Instalación local
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+\`\`\`bash
+git clone https://github.com/Sebastian09-cell/rest-api-recetario-mealdb.git
+cd rest-api-recetario-mealdb
+npm install
+npm run dev
+\`\`\`
+
+## 🛠️ Build para producción
+
+\`\`\`bash
+npm run build
+\`\`\`
+
+## 👤 Autor
+
+**Sebastián Torres**
+
+- GitHub: [@Sebastian09-cell](https://github.com/Sebastian09-cell)
