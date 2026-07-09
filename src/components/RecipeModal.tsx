@@ -25,7 +25,6 @@ const RecipeModal = ({ isOpen, onClose, loading, data }: Props) => {
     <Modal isOpen={isOpen} onClose={onClose}>
       <ModalOverlay />
       <ModalContent>
-        <ModalHeader>Modal Title</ModalHeader>
         <ModalCloseButton />
         <ModalBody>
           {loading ? (
